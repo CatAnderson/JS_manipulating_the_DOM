@@ -14,12 +14,12 @@
 
     <form id="new-movie-form">
         <div class="form-item">
-          <label for="movie-title">Movie Title</label>
-          <input type="text" id="movie-title" required/>
+          <label for="title">Movie Title</label>
+          <input type="text" id="title" required/>
         </div>
         <div class="form-item">
-            <label for="release-date">Release Date</label>
-            <input type="text" id="release-date" required/>
+            <label for="date">Release Date</label>
+            <input type="text" id="date" required/>
         </div>
         <div class="form-item">
             <label for="genre">Genre</label>
@@ -40,7 +40,14 @@
       </form>
   
       <h1>Movie List</h1>
-      <ul id="movie-list"></ul>
+      <ul id="movie-list">
+          <li>
+              <h2>Sister Act</h2>
+              <h3>1992</h3>
+              <p>Comedy</p>
+          </li>
+      </ul>
+      <input type="submit" value="delete"/>
     </form>
 </body>
 </html>

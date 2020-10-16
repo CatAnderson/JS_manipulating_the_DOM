@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const save = document.querySelector('#new-movie-form')
     save.addEventListener('submit',handleSave)
+
+
 });
 
 const handleSave = function(event){
@@ -14,6 +16,8 @@ const handleSave = function(event){
     const releaseDateInput = document.createElement('h3');
     const genreInput = document.createElement('p');
 
+    // console.dir(event)
+
     //append this to the ul already in the html
     newMovieListItem.appendChild(titleInput);
     newMovieListItem.appendChild(releaseDateInput);
@@ -21,7 +25,17 @@ const handleSave = function(event){
 
 
     //create movieList
-    //grab values from the form and put them in the list.
-    //append the values to the movieList.
+    const movieList = document.querySelector('#movie-list');
 
+
+    //grab values from the form and put them in the list.
+    titleInput.textContent = this.title.value;
+    releaseDateInput.textContent = this.date.value;
+    genreInput.textContent = this.genre.value;
+
+
+    //append the values to the movieList.
+    movieList.appendChild(newMovieListItem);
+
+    event.target.reset();
 }
