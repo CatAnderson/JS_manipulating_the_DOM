@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const save = document.querySelector('#new-movie-form')
     save.addEventListener('submit',handleSave)
 
+    const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAll);
 
 });
 
@@ -38,4 +40,9 @@ const handleSave = function(event){
     movieList.appendChild(newMovieListItem);
 
     event.target.reset();
+};
+
+const handleDeleteAll = function(event){
+    const movieList = document.querySelector('#movie-list');
+    movieList.innerHTML = '';
 }
