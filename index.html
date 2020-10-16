@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+    <title>Movie App</title>
+</head>
+<body>
+    <Header>
+        <h1>Movie Madness...</h1>
+    </Header>
+
+    <form id="new-movie-form">
+        <div class="form-item">
+          <label for="movie-title">Movie Title</label>
+          <input type="text" id="movie-title" required/>
+        </div>
+        <div class="form-item">
+            <label for="release-date">Release Date</label>
+            <input type="text" id="release-date" required/>
+        </div>
+        <div class="form-item">
+            <label for="genre">Genre</label>
+            <select id="genre">
+              <option value="" disabled selected></option>
+              <option value="Action">Action</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Drama">Drama</option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="Blog Post">Horror</option>
+              <option value="Romance">Romance</option>
+              <option value="Thriller">Thriller</option>
+              <option value="Science Fiction">Science Fiction</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="save"/>
+      </form>
+  
+      <h1>Movie List</h1>
+      <ul id="movie-list"></ul>
+    </form>
+</body>
+</html>
