@@ -1,0 +1,126 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #0f0f33, #0f3057);;
+}
+
+body > header {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    padding: 0.2rem;
+}
+
+body > main {
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* align-items: center; */
+    margin: auto;
+}
+
+.large-img{
+    height: 50vh;
+    width: 50vw;
+    margin: 0 6rem;
+}
+
+.colour-block {
+    background-color: #d19920;
+    height: 20px;
+    margin-top: 0px;
+}
+
+#new-movie-form {
+    display: block;
+    background-color: #d19920;
+    color: #0f0f33;
+    padding: 35px;
+    vertical-align: middle;
+    align-items: center;
+    height: 20vh;
+    width: 20vw;
+    line-height: 30pt;
+    margin: auto;
+}
+
+.save-button {
+    display: block;
+    background-color: #0f3057;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5px;
+
+    width: 100px;
+    height: 5px;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px auto;
+
+    font-size: 14pt;
+    font-weight: 400;  
+}
+body > aside {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+body > aside > h1 {
+    grid-column:  1 / -1;
+}
+
+.movie-item {
+    display: block;
+    background-color: #d19920;
+    box-shadow: 5px 5px 15px 5px #0f0f33;
+    color: #0f0f33;
+
+    align-items: center;
+    margin: 20px;
+    height: 20vh;
+    width: 25vw;
+    padding: 1rem;
+
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: .2rem;
+}
+
+
+#delete-all {
+    display: block;
+    background-color: #d19920;
+    color: #0f0f33;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5px;
+
+    width: 100px;
+    height: 5px;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px auto;
+
+    font-size: 14pt;
+    font-weight: 400;  
+
+    grid-column:  1 / -1;
+}

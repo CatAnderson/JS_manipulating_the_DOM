@@ -3,51 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+    <link rel="stylesheet" type="text/css" 
+    media="screen" href="static/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/font.css" />
+
     <script src="js/app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+
     <title>Movie App</title>
 </head>
 <body>
     <Header>
         <h1>Movie Madness...</h1>
     </Header>
-
-    <form id="new-movie-form">
-        <div class="form-item">
-          <label for="title">Movie Title</label>
-          <input type="text" id="title" required/>
-        </div>
-        <div class="form-item">
-            <label for="date">Release Date</label>
-            <input type="text" id="date" required/>
-        </div>
-        <div class="form-item">
-            <label for="genre">Genre</label>
-            <select id="genre">
-              <option value="" disabled selected></option>
-              <option value="Action">Action</option>
-              <option value="Comedy">Comedy</option>
-              <option value="Drama">Drama</option>
-              <option value="Fantasy">Fantasy</option>
-              <option value="Blog Post">Horror</option>
-              <option value="Romance">Romance</option>
-              <option value="Thriller">Thriller</option>
-              <option value="Science Fiction">Science Fiction</option>
-            </select>
-          </div>
-        </div>
-        <input type="submit" value="save"/>
-      </form>
-  
+    <dir class="colour-block"></dir>
+    <main>
+        <img class= "large-img" src="../movie_dom_app/static/img/pexels-nathan-engel-436413.jpg" alt="">
+        <form id="new-movie-form">
+            <div class="form-item">
+            <label for="title">Movie Title</label>
+            <input type="text" id="title" required/>
+            </div>
+            <div class="form-item">
+                <label for="date">Release Date</label>
+                <input type="text" id="date" required/>
+            </div>
+            <div class="form-item">
+                <label for="genre">Genre</label>
+                <select id="genre">
+                <option value="" disabled selected></option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Blog Post">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Science Fiction">Science Fiction</option>
+                </select>
+            </div>
+            <input  class="save-button" type="submit" value="save"/>
+        </form>
+        <!-- <form action="seen-movie">
+            <div class="form-item">
+                <p>Have you seen this movie?</p>
+                <input type="radio" id="yes" name="yes" value="yes"
+                    checked>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label>
+            </div>
+        </form> -->
+    </main>
+    <dir class="colour-block"></dir>
+    <aside>
       <h1>Movie List</h1>
       <ul id="movie-list">
-          <li>
+          <li class="movie-item">
               <h2>Sister Act</h2>
               <h3>1992</h3>
               <p>Comedy</p>
           </li>
       </ul>
       <input id="delete-all" type="submit" value="delete"/>
-    </form>
+    </aside>
 </body>
 </html>

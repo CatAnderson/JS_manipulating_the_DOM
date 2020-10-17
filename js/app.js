@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('JavaScript loaded');
 
-    const save = document.querySelector('#new-movie-form')
-    save.addEventListener('submit',handleSave)
+    const saveForm = document.querySelector('#new-movie-form')
+    saveForm.addEventListener('submit',handleSave)
 
     const deleteAllButton = document.querySelector('#delete-all');
-  deleteAllButton.addEventListener('click', handleDeleteAll);
+    deleteAllButton.addEventListener('click', handleDeleteAll)
 
 });
 
@@ -44,5 +44,5 @@ const handleSave = function(event){
 
 const handleDeleteAll = function(event){
     const movieList = document.querySelector('#movie-list');
-    movieList.innerHTML = '';
+  movieList.innerHTML = '';
 }
