@@ -48,10 +48,9 @@ body > main {
     color: #0f3057;
     vertical-align: middle;
     align-items: center;
-    height: 30vh;
     width: 50vw;
     line-height: 20pt;
-    margin: auto;
+    margin: 2.5rem auto;
 
     font-weight: 600;
     font-size: 16pt;
@@ -135,6 +134,7 @@ body > main {
     text-decoration: none;
     letter-spacing: .2rem;
 }
+
 .movie-item:hover{
     background-color: #d19920;
 }

@@ -17,6 +17,7 @@ const handleSave = function(event){
     const titleInput = document.createElement('h2');
     const releaseDateInput = document.createElement('h3');
     const genreInput = document.createElement('p');
+    const seenInput = document.createElement('h3')
 
     // console.dir(event)
 
@@ -24,6 +25,7 @@ const handleSave = function(event){
     newMovieListItem.appendChild(titleInput);
     newMovieListItem.appendChild(releaseDateInput);
     newMovieListItem.appendChild(genreInput);
+    newMovieListItem.appendChild(seenInput)
 
 
     //create movieList
@@ -31,10 +33,12 @@ const handleSave = function(event){
 
 
     //grab values from the form and put them in the list.
-    newMovieListItem.className = "movie-item"
+    // newMovieListItem.className = "movie-item"
+    newMovieListItem.classList.add("movie-item")
     titleInput.textContent = this.title.value;
     releaseDateInput.textContent = this.date.value;
     genreInput.textContent = this.genre.value;
+    seenInput.textContent = this.seen.value;
 
 
     //append the values to the movieList.
