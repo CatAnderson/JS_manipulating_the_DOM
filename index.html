@@ -17,9 +17,8 @@
 </head>
 <body>
     <Header>
-        <h1>Movie Madness...</h1>
+        <h1>Film Fin</h1>
     </Header>
-    <dir class="colour-block"></dir>
     <main>
         <img class= "large-img" src="../movie_dom_app/static/img/pexels-nathan-engel-436413.jpg" alt="Out a cinema with bright lights">
         <form id="new-movie-form">
@@ -27,10 +26,12 @@
             <label for="title">Movie Title</label>
             <input type="text" id="title" required/>
             </div>
+            <br>
             <div class="form-item">
                 <label for="date">Release Date</label>
                 <input type="text" id="date" required/>
             </div>
+            <br>
             <div class="form-item">
                 <label for="genre">Genre</label>
                 <select id="genre">
@@ -45,6 +46,7 @@
                 <option value="Science Fiction">Science Fiction</option>
                 </select>
             </div>
+            <br>
             <input  class="save-button" type="submit" value="save"/>
         </form>
         <!-- <form action="seen-movie">
@@ -58,7 +60,6 @@
             </div>
         </form> -->
     </main>
-    <dir class="colour-block"></dir>
     <aside>
       <h1>Movie List</h1>
       <ul id="movie-list">

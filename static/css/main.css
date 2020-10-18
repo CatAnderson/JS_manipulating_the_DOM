@@ -16,39 +16,63 @@ body > header {
     padding: 0.2rem;
 }
 
+body > header > h1{
+    padding: 30px;
+    letter-spacing: .7rem;
+    margin: 0px;
+}
+
 body > main {
+    background-color: #d19920;
     width: 100vw;
     height: 50vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    /* align-items: center; */
     margin: auto;
 }
 
 .large-img{
     height: 50vh;
     width: 50vw;
-    margin: 0 6rem;
+    /* margin: 0 6rem 0 0 ; */
 }
 
 .colour-block {
     background-color: #d19920;
     height: 20px;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 #new-movie-form {
     display: block;
-    background-color: #d19920;
-    color: #0f0f33;
-    padding: 35px;
+    color: #0f3057;
     vertical-align: middle;
     align-items: center;
-    height: 20vh;
-    width: 20vw;
-    line-height: 30pt;
+    height: 30vh;
+    width: 50vw;
+    line-height: 20pt;
     margin: auto;
+
+    font-weight: 600;
+    font-size: 16pt;
 }
+
+#title, #date, #genre {
+    background-color:  #ffffff;
+    border: none;
+    border-bottom: 2px solid #0f3057;
+    border-radius: 5px;
+    color: #0f3057;
+    width: 10vw;
+    padding: 12px 20px;
+    margin: 10px;
+    vertical-align: middle;
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+  }
 
 .save-button {
     display: block;
@@ -70,42 +94,52 @@ body > main {
     font-size: 14pt;
     font-weight: 400;  
 }
-body > aside {
+
+/* body > aside{
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     justify-items: center;
     margin: auto;
-}
+} */
 
-body > aside > h1 {
+/* body > aside > h1 {
     grid-column:  1 / -1;
+} */
+
+#movie-list {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .movie-item {
     display: block;
-    background-color: #d19920;
-    box-shadow: 5px 5px 15px 5px #0f0f33;
-    color: #0f0f33;
+    border-color: #d19920;
+    border-style: dotted;
+    border-width: thick;
 
     align-items: center;
-    margin: 20px;
+    margin: auto;
     height: 20vh;
-    width: 25vw;
-    padding: 1rem;
+    width: 20vw;
+    padding: 0.5rem;
 
     list-style: none;
     text-decoration: none;
     letter-spacing: .2rem;
 }
 
-
 #delete-all {
     display: block;
     background-color: #d19920;
-    color: #0f0f33;
+    color: #0f3057;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
@@ -113,16 +147,15 @@ body > aside > h1 {
 
     width: 100px;
     height: 5px;
-
     padding: 20px;
     border-radius: 10px;
     border: none;
-    margin: 20px auto;
+    margin: 40px auto;
 
     font-size: 14pt;
     font-weight: 400;  
 
-    grid-column:  1 / -1;
+    /* grid-column:  1 / -1; */
 }
 
 .img-block {

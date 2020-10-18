@@ -31,6 +31,7 @@ const handleSave = function(event){
 
 
     //grab values from the form and put them in the list.
+    newMovieListItem.className = "movie-item"
     titleInput.textContent = this.title.value;
     releaseDateInput.textContent = this.date.value;
     genreInput.textContent = this.genre.value;
