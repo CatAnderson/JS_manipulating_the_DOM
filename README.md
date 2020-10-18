@@ -22,11 +22,3 @@ Extensions
     Experiment with adding a new form input and experimenting with a new <input> type eg. Add a radio button input
     Style your application with CSS
     Add any other extension functionality that you want!
-
-Considerations
-
-When you want to display a new element on the page, you will need to:
-
-    Access an element that is already in the DOM (querySelector)
-    Create a new element in the JavaScript and populate it with values (createElement)
-    Append the new element you have created in the JavaScript, to the element that is already in the DOM (appendChild)
