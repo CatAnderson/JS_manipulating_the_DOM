@@ -43,7 +43,7 @@ const handleSave = function(event){
     event.target.reset();
 };
 
-const handleDeleteAll = function(event){
+const handleDeleteAll = function(){
     const movieList = document.querySelector('#movie-list');
   movieList.innerHTML = '';
-}
+};

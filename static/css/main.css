@@ -58,7 +58,7 @@ body > main {
 }
 
 #title, #date, #genre {
-    background-color:  #ffffff;
+    background-color:  #c5c5c5;
     border: none;
     border-bottom: 2px solid #0f3057;
     border-radius: 5px;
@@ -134,6 +134,9 @@ body > main {
     list-style: none;
     text-decoration: none;
     letter-spacing: .2rem;
+}
+.movie-item:hover{
+    background-color: #d19920;
 }
 
 #delete-all {
